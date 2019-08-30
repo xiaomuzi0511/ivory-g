@@ -1,6 +1,5 @@
 <template>
 	<div>
-		大是大非
 		<home-header></home-header>
 		<div class="tabZujian">
 			<van-tabs v-model="active" @click='checkTab'>
