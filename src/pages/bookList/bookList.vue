@@ -7,7 +7,7 @@
 				</router-link>
 			</mt-header>
 		</div>
-		
+
 		<div>
 			<div class="lately" v-if="isContent">
 				<ul class="lately-ul">
@@ -53,7 +53,7 @@ export default {
 		return{
 			num:'',
 			title:'',
-			isContent:true      
+			isContent:true
 		}
 	},
 	mounted(){
@@ -65,7 +65,7 @@ export default {
 		}else if(this.num == 3){
 			this.title = '我的团队'
 		}
-		
+
 	},
 	methods:{
 		goPersonal(){

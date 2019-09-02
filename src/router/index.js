@@ -36,6 +36,15 @@ import settingUp from "@/pages/settingUp/settingUp"
 import feedback from '@/pages/feedback/feedback'
 import familiarIssue from "@/pages/familiarIssue/familiarIssue"
 
+import toolManger from '../pages/toolManger/toolManger' //工具管理
+import searchTool from "@/pages/queryTool/searchTool"   //工具查找
+import toolDetail from "@/pages/toolDetail/toolDetail"   //工具详情
+import releaseToolList from '@/pages/releaseToolList/releaseToolList'   //发放工具列表
+import releaseTool from '@/pages/releaseTool/releaseTool'          //工具发放
+import toolList from '@/pages/toolList/toolList'    //工具清单
+import toolReturn from '@/pages/toolReturn/toolReturn'   //工具归还列表
+import toolReturnList from '@/pages/toolReturnList/toolReturnList'  //用户归还清单
+import toolReturnDetail from '@/pages/toolReturnDetail/toolReturnDetail'  //用户归还清单
 Vue.use(Router)
 
 export default new Router({
@@ -60,7 +69,7 @@ export default new Router({
 			name :'agreement',
 			component:agreement
 		},
-		{ 
+		{
 			path: '/my/personalData',    //个人资料
 			name :'personalData',
 			component:personalData
@@ -220,6 +229,51 @@ export default new Router({
 			path: '/book/bookmyteam',
 			name :'bookmyteam',
 			component:bookmyteam
-		}
+		},
+    {
+      path: '/queryTool/searchTool',
+      name :'searchTool',
+      component:searchTool
+    },
+    {
+      path: '/toolDetail/toolDetail',
+      name :'toolDetail',
+      component:toolDetail
+    },
+    {
+      path:'/releaseTool/releaseTool',
+      name:'releaseTool',
+      component:releaseTool
+    },
+    {
+      path:'/releaseToolList/releaseToolList',
+      name:'releaseToolList',
+      component:releaseToolList
+    },
+    {
+      path:'/toolList/toolList',
+      name:'toolList',
+      component:toolList
+    },
+    {
+      path:'/toolManger/toolManger',
+      name:'toolManger',
+      component:toolManger
+    },
+    {
+      path:'/toolReturn/toolReturn',
+      name:'toolReturn',
+      component:toolReturn
+    },
+    {
+      path:'/toolReturnList/toolReturnList',
+      name:'toolReturnList',
+      component:toolReturnList
+    },
+    {
+      path:'/toolReturnDetail/toolReturnDetail',
+      name:'toolReturnDetail',
+      component:toolReturnDetail
+    }
   ]
 })
