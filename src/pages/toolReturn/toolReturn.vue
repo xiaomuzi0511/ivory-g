@@ -91,12 +91,25 @@
     }
   }
 </script>
-
 <style scoped>
   #toolReturn {
     height: 100%;
     width: 100%;
     background-color: #F5F5F5;
+  }
+  .head-comp {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+  }
+
+  .head-comp >>> .mint-header {
+    background: #ffffff;
+    color: #000;
+    font-size: 0.36rem;
+    height: 0.88rem;
   }
   .back {
     padding: 0.3rem 0.3rem 0rem 0.3rem;

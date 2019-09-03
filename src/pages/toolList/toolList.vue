@@ -120,10 +120,6 @@
     font-size: 0.36rem;
     height: 0.88rem;
   }
-  .all {
-    width: 100%;
-    padding:0.1rem 0.2rem 0.2rem 0.2rem;
-  }
   .selA {
     margin-top: 0.8rem;
     background-color: #f5f5f5;
