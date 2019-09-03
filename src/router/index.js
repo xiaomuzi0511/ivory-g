@@ -36,6 +36,7 @@ import settingUp from "@/pages/settingUp/settingUp"
 import feedback from '@/pages/feedback/feedback'
 import familiarIssue from "@/pages/familiarIssue/familiarIssue"
 
+//班长端
 import toolManger from '../pages/toolManger/toolManger' //工具管理
 import searchTool from "@/pages/queryTool/searchTool"   //工具查找
 import toolDetail from "@/pages/toolDetail/toolDetail"   //工具详情
@@ -45,6 +46,7 @@ import toolList from '@/pages/toolList/toolList'    //工具清单
 import toolReturn from '@/pages/toolReturn/toolReturn'   //工具归还列表
 import toolReturnList from '@/pages/toolReturnList/toolReturnList'  //用户归还清单
 import toolReturnDetail from '@/pages/toolReturnDetail/toolReturnDetail'  //用户归还清单
+import returnToolRemarks from '@/pages/returnToolRemarks/returnToolRemarks'  //工具归还备注
 Vue.use(Router)
 
 export default new Router({
@@ -274,6 +276,11 @@ export default new Router({
       path:'/toolReturnDetail/toolReturnDetail',
       name:'toolReturnDetail',
       component:toolReturnDetail
+    },
+    {
+      path: '/returnToolRemarks/returnToolRemarks',
+      name: 'returnToolRemarks',
+      component: returnToolRemarks
     }
   ]
 })

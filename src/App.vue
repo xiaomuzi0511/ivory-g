@@ -25,7 +25,7 @@ export default {
   	// 刷新方法
     reload: function () {
         this.isRouterAlive = false
-        this.$nextTick(function () { 
+        this.$nextTick(function () {
         	this.isRouterAlive = true
          })
     }

@@ -6,7 +6,7 @@
       <!--        <em><input v-model="searchTool" type="text" placeholder="搜索项目所需工具"/></em>-->
     </div>
     <van-cell-group>
-      <div >
+      <div is-link @click="getRemarks('/returnToolRemarks/returnToolRemarks',1)">
         <van-cell title="备注" icon="edit" value="改这一行的">
           <van-icon
             center="false"
@@ -101,6 +101,9 @@
       },
       back () {
         this.$router.go(-1)
+      },
+      getRemarks(path,id){
+        this.$router.push({path:path,query:{num:id}});
       }
     }
   }
